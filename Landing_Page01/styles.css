@@ -1,0 +1,252 @@
+/* body{
+    background-color: rebeccapurple;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.top{
+    width: 100%;
+    min-height: 60vh;
+    /* background-color: blueviolet; */
+    background-image: url(https://images.unsplash.com/photo-1609333902029-5ddf58a6c85c?auto=format&fit=crop&q=80&w=2023&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay{
+    position: relative;
+    min-height: inherit;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.399);
+}
+
+.text{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    /* height: 20%; */
+    /* background-color: red; */
+    bottom: 20%;
+    padding: 0 10vw;
+    
+}
+
+.text h1{
+    font-weight: 400;
+    font-size: 6vw;
+    color: rgb(222, 231, 235);
+    
+
+}
+
+.righttext{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    /* border: 15px  yellow; */
+    /* background-color: aliceblue; */
+    width: 60%;
+    /* align-content: 50px; */
+    
+    
+}
+
+.righttext p{
+    
+    font-size: 18px;
+    width: 40%;
+    color: rgba(222, 231, 235, 0.925);
+}
+.righttext i{
+    color: #fff;
+    font-size: 140%;
+}
+
+.bottom{
+
+    width: 100%;
+    min-height: 40vh;
+    background-color: red;
+    display: flex;
+    /* justify-content: center; */
+
+}
+
+#bone{
+    padding: 30px;
+    width: 25%;
+    min-height: inherit;
+    background-color:white;
+    color: #444;
+}
+#bone>h3{
+    margin-bottom: 10px;
+}
+#bone>p{ 
+    font-size: 17px;
+}
+
+#btwo{
+    width: 25%;
+    min-height: inherit;
+    background-image: url(https://images.pexels.com/photos/18020023/pexels-photo-18020023/free-photo-of-back-view-of-a-woman-wearing-an-orange-raincoat-standing-in-a-landscape.jpeg?auto=compress&cs=tinysrgb&w=600);
+    /* background-size: cover; */
+    /* background-position: 50% 10%; */
+    background-position: center;
+    background-size:150%;
+    
+}
+
+#bthree{
+    width: 20%;
+    min-height: inherit;
+    background-color: aqua;
+    
+}
+
+#bthreetop{
+    width: 100%;
+    min-height: 20vh;
+    background-color: orangered;
+    padding: 30px;
+
+}
+#bthreetop>h4{
+    margin-bottom: 10px;
+    color: white;
+
+}
+#bthreetop>p{
+    color: white;
+
+}
+#bthreebottom{
+    width: 100%;
+    min-height: 20vh;
+
+    background-image: url(https://images.unsplash.com/photo-1519017768885-bc3d13d32ea6?auto=format&fit=crop&q=80&w=1932&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#bfour{
+    width: 30%;
+    min-height: inherit;
+    background-color: #444;
+    color: white;
+    padding: 30px;
+}
+
+#bfour>p{
+    
+    font-size: 30px;
+    /* font-weight: 500; */
+    
+
+}
+.notf{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    align-items: center;
+
+    
+}
+#photo{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: orangered;
+    margin-left: 20px;
+
+}
+
+.notf p{
+    width: 85%;
+    font-size: 17px;    
+
+}
+
+@media(max-width:700px){
+    .top{
+        /* overflow-x: ; */
+    }
+    .overlay .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .overlay .text .righttext{
+        flex-direction: column  ;
+        align-items: flex-start;
+    }
+    .overlay .text .righttext p{
+        width: initial;
+        margin-top: 20px;
+    }
+    .icon{
+        margin-top: 30px;   
+    }
+    .text h1{
+        font-size: 10vw;
+    }
+
+    .bottom{
+        flex-direction: column;
+        min-height: 20vh;
+    }
+    #bone{
+        width: 100%;
+        min-height: 25vh;
+
+    }
+    #bone>h3{
+        /* text-align: center; */
+    }
+    #bone>p{
+        width: 70%;
+        /* text-align: center; */
+    }
+    #btwo{
+        width: 100%;
+        min-height: 25vh;
+        background-position: 75% 40%;
+        
+
+    }
+    #bthree{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #bthreetop{
+        min-height: 10vh;
+
+    }
+    #bfour{
+        width: 100%;
+        min-height: 30vh;
+
+    }
+    .notf{
+        /* display: flex;
+        justify-content: center; */
+    }
+}
